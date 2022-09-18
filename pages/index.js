@@ -6,6 +6,7 @@ import styles from '../styles/Home.module.css'
 import Link from 'next/link'
 
 
+
 export default function Home() {
   return (
     <>
@@ -18,24 +19,29 @@ export default function Home() {
        <meta name="keywords" content="f1-seasons" />
        
     </Head>
-    <div className="container">
-    <div className="row row-content">
-       <div classname="col-4">
-        <h1 className={styles.title}>F1 Season Results &#128466;</h1>
+    
+       
+        <h1 className={styles.title}>F1 Season Results &#127950;</h1>
+        <div className="container">
+        <div className="row row-content">
+        <div className="col-sm-6">
         <p className={styles.text}>This simple Web Application is to show the F1 seasons, the applications functionality is to fetch data from the F1 <b>Ergast.com</b> API and must populate a list or table of the F1 seasons from 2005 
-        until currently. It will display the championship winners of that season and how many championships they have won within that season. This application is developed using <em>Next.js</em> a react framework, which uses HTML, CSS and 
-        JavaScript with Node.js and it will be contained within the Docker container image. Enjoy! &#128515;</p>
-          </div>
-          <div className="col-8">
-            <div className="col-12">
-               <Image src="/f1-cars3.jpg" width={489} height={200} className="f1-img" />
+        until currently. It will display the championship winners &#127942; of that season and how many championships they have won within that season. This application is developed using <em>Next.js</em> a react framework, which uses HTML, CSS, 
+        JavaScript and Node.js with React and it will be contained within the Docker container image.</p>
+          
+          
+                     
+      </div>
+         <div className="col-sm-6">
+            <div className="center"  >
+               <Image src="/f1-cars3.jpg" className="f1-img" width={489} height={200} />
             </div>
 
           </div>
+         
              <Link href="/seasons">
               <a className={styles.btn}>Go to Seasons</a>
              </Link>
-        
       </div>
       </div>
     </>

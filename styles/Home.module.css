@@ -19,7 +19,8 @@
 }
 .f1-img {
   background-image: linear-gradient(red, white);
-  float: center;
+  
+  border-radius: 8px;
 }
 
 .row-content {

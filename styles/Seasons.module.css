@@ -1,12 +1,19 @@
 .single {
-    padding: 2px 16px;
-    background: #ED1E32;
+    padding: 2px 26px;
+    background: #D8D1D1;
     display: block;
-    margin: 20px 10px;
+    margin: 20px 30px;
     border-left: 8px solid #fff;
+    text-align: center;
 
 }
 
 .single:hover {
     border-left: 8px solid #ED1E32;
+}
+
+.heading {
+  color: #333;
+  padding-bottom: 20px;
+  text-align: center;
 }
