@@ -19,7 +19,7 @@ export default function Home() {
        
     </Head>
     <div className="container">
-    <div className="row">
+    <div className="row row-content">
        <div classname="col-4">
         <h1 className={styles.title}>F1 Season Results &#128466;</h1>
         <p className={styles.text}>This simple Web Application is to show the F1 seasons, the applications functionality is to fetch data from the F1 <b>Ergast.com</b> API and must populate a list or table of the F1 seasons from 2005 
