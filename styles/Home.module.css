@@ -16,3 +16,6 @@
   color: white;
   text-align: center;
 }
+.f1-img {
+  background-image: linear-gradient(red, white);
+}

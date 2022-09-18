@@ -11,15 +11,20 @@ export default function Home() {
     <Head>
        <title>F1 Seasons | Home</title>
        <meta name="keywords" content="f1-seasons" />
+       
     </Head>
-    <div className="row row-content">
-       <div className="col-sm-6">
+    <div className="row">
+       <div className="col-6">
         <h1 className={styles.title}>F1 Season Results</h1>
-        <p className={styles.text}>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-           ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
-           laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-             non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+        <p className={styles.text}>This mini application is for the F1 seasons, the applications functionality is to fetch data from the F1 <b>Ergast.com</b> api and must populate the F1 seasons from 2005 
+        until currently. It will diplay the championship winners of that season and how many championships they have won within that season. This application is developed using <em>Next.js,</em> which uses HTML, CSS and 
+        Javascript with Node.js and it will be contained within the Docker container image. Enjoy! &#128515;</p>
+          </div>
+          <div className="row row-content">
+            <div className="col-6">
+               <Image src="/f1-cars3.jpg" width={512} height={256} className="f1-img"/>
+            </div>
+
           </div>
              <Link href="/seasons">
               <a className={styles.btn}>Go to Seasons</a>
