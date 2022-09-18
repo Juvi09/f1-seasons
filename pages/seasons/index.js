@@ -25,9 +25,10 @@ export const getStaticProps = async () => {
     const res = await fetch('http://ergast.com/api/f1/seasons.json');
     const data = await res.json();
 
-    return {
-        props: {seasons: data},
-     }
+    console.log("test");
+
+    return { props: { seasons: data}}
+   /* this.setState({ seasons: data});*/
  }
 
 const Seasons = ({ seasons }) => {
@@ -40,14 +41,15 @@ const Seasons = ({ seasons }) => {
         <div>
             <h1>All Seasons</h1>
             
-            {seasons.map(Season => (
-                <Link href={'/seasons/' + season.id} key={ season.id }>
+          
+             {seasons.MRData.SeasonTable.Seasons.map(Season => (
+                <Link href={'/seasons/' + Season.id} key={ Season.id }>
                    <a className={styles.single}>
-                    <h3><em>Season:</em>  { season.season }</h3>
+                    <h3><em>Season:</em>  { Season.season }</h3>
                                
                    </a>
                 </Link>
-            ))}
+            ))} 
         </div>
     </>   
      );

@@ -1,3 +1,4 @@
+
 .title {
   color: #333;
   padding-bottom: 20px;
@@ -18,4 +19,13 @@
 }
 .f1-img {
   background-image: linear-gradient(red, white);
+  float: center;
+}
+
+.row-content {
+  margin: 0px auto;
+  padding: 50px 0px 50px 0px;
+  border-bottom: 1px ridge;
+  min-height: 400px;
+
 }
