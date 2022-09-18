@@ -14,8 +14,8 @@ const NotFoundPage = () => {
     }, [])
     return ( 
         <div className="not-found">
-            <h1>Oooops...</h1>
-            <h2>The page cannot be found.</h2>
+            <h1><b>Sorry...</b></h1>
+            <h2>This page cannot be found.</h2>
             <p>Go Back To <Link href="/"><a>Home</a></Link></p>
         </div>
      );
