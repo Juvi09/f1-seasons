@@ -23,7 +23,7 @@ const Seasons = ({ seasons }) => {
             <h1>Seasons</h1>
 
             {seasons.MRData.SeasonTable.Seasons.reverse().map(Season => (
-                <Link href={'/seasons/' + Season.season} key={ Season.season }>
+                <Link href={'/seasons/' + Season.season } key={ Season.season }>
                    <a className={styles.single}>
                    { Season.season }    
                    </a>
