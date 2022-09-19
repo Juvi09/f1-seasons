@@ -17,8 +17,11 @@ export const getStaticPaths = async () => {
 
 export const getStaticProps = async (context) => {
     const season = context.params.season;
-    const res = await fetch('http://ergast.com/api/f1/seasons.json' +  season );
+    console.log(season);
+    const res = await fetch('http://ergast.com/api/f1/' +  season + ".json");
     const data = await res.json();
+
+
 
     // console.log(data.MRData.SeasonTable.Seasons.Round)
 
