@@ -18,7 +18,7 @@
   text-align: center;
 }
 .f1-img {
-  background-image: linear-gradient(red, white);
+  background-image: linear-gradient(white, white);
   
   border-radius: 8px;
 }

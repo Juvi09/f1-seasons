@@ -21,7 +21,7 @@ export default function Home() {
     </Head>
     
        
-        <h1 className={styles.title}>F1 Season Results &#127950;</h1>
+        <h1 className={styles.title}>F1 Season Results</h1>
         <div className="container">
         <div className="row row-content">
         <div className="col-sm-6">
@@ -34,7 +34,7 @@ export default function Home() {
       </div>
          <div className="col-sm-6">
             <div className="center"  >
-               <Image src="/f1-cars3.jpg" className="f1-img" width={489} height={200} />
+               <Image src="/f1-2022.jpg" className="f1-img" width={512} height={200} />
             </div>
 
           </div>
