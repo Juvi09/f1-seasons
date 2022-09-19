@@ -39,8 +39,10 @@ const Details = ({ races }) => {
     return (
 
         <div>
+            <h1>Season Details</h1>
             {console.log(races)}
             {races.map(Race => (
+                
                 <p>{Race.raceName}</p>
             ))}
         </div>
