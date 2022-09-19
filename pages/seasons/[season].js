@@ -16,30 +16,39 @@ export const getStaticPaths = async () => {
 
 
 export const getStaticProps = async (context) => {
+
     const season = context.params.season;
+
     console.log(season);
+
     const res = await fetch('http://ergast.com/api/f1/' +  season + ".json");
+
     const data = await res.json();
 
-
-
-    // console.log(data.MRData.SeasonTable.Seasons.Round)
+    
 
     return {
-        props: {season: data.MRData.SeasonTable.Seasons}
+
+        props: {races: data.MRData.RaceTable.Races}
+
     }
+
 }
 
-const  Details = ({ season }) => {
-    return (
-        
-            
-            <div>
-                <p>{ season.seasons}</p>
-            </div>
-     
-      );
-    
+const Details = ({ races }) => {
+    return (
+
+        <div>
+            {console.log(races)}
+            {races.map(Race => (
+                <p>{Race.raceName}</p>
+            ))}
+        </div>
+
+    );
+
 }
+
+
  
 export default  Details;
